@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>Event Details</display-name>
+    
+    <servlet>
+        <servlet-name>EventViewServlet</servlet-name>
+        <servlet-class>com.khadeer.EventViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventViewServlet</servlet-name>
+        <url-pattern>/event-view</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EventDetailsServlet</servlet-name>
+        <servlet-class>com.khadeer.EventDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventDetailsServlet</servlet-name>
+        <url-pattern>/event-details</url-pattern>
+    </servlet-mapping>
+
+</web-app>
